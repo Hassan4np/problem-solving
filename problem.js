@@ -509,3 +509,131 @@
 // const s = "ami tme onk vlobasi tmi ki amr vlo valo";
 // const all = Voualcount(s);
 // console.log(all);l);
+
+
+// CLASS 7 AR PROBELM SOLVING;
+
+
+// //1. duplacate array;
+// const names = ['hassan', 'sagor', 'munna', 'arif', 'hossain', 'bappy', 'hassan', 'ralse', 'bappy', 'munna'];
+
+// function DuplacateArray(name) {
+//     let MainName = []
+//         // for (item of name) {
+//         //     if (MainName.includes(item) === false) {
+//         //         MainName.push(item);
+//         //     }
+//         // }
+//     for (i = 0; i < name.length; i++) {
+//         let item = name[i];
+//         if (MainName.includes(item) === false) {
+//             MainName.push(item);
+//         }
+//     }
+//     return MainName;
+// }
+// const mainname = DuplacateArray(names);
+// console.log(mainname);
+
+
+// //2. 1-50 projento number moddo 3 diye vag gele print foo 5 diye gele print bar r 3 and 5 diye gele print foobar hobe;
+// for (i = 1; i <= 50; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//         console.log("foobar");
+//     } else if (i % 3 === 0) {
+//         console.log("foo");
+//     } else if (i % 5 === 0) {
+//         console.log("bar");
+//     } else {
+//         console.log(i);
+//     }
+// }
+
+
+// //3. array moddo obj rekhe tar por tar moddo kar phn ar dam basi oti ber korte hobe;
+
+// maxprice = [
+//     { firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue", parice: 2000 },
+//     {
+//         firstName: "rose",
+//         lastName: "Doe",
+//         age: 23,
+//         eyeColor: "blue",
+//         parice: 300
+//     },
+//     { firstName: "rnike", lastName: "Doe", age: 65, eyeColor: "blue", parice: 6000 },
+//     { firstName: "roon", lastName: "Doe", age: 654, eyeColor: "blue", parice: 8000 },
+// ]
+
+// function AllPrice(item) {
+//     let maxpricess = item[0];
+//     for (i = 0; i < item.length; i++) {
+//         if (maxpricess.parice < item[i].parice) {
+//             maxpricess = item[i];
+//         }
+//     }
+//     return maxpricess;
+// }
+// const allitem = AllPrice(maxprice);
+// console.log(allitem);
+
+//4. array moddo obj rekhe tar por tar moddo kar phn ar quntaty hisabe dam ber korte hobe sum phn;
+
+// const maxpriceall = [
+//     { firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue", parice: 2222, quantaty: 2 },
+//     { firstName: "rnike", lastName: "Doe", age: 65, eyeColor: "blue", parice: 474, quantaty: 3 },
+//     { firstName: "roon", lastName: "Doe", age: 654, eyeColor: "blue", parice: 424, quantaty: 4 },
+//     { firstName: "hasan", lastName: "Doe", age: 654, eyeColor: "blue", parice: 9242, quantaty: 4 },
+// ];
+
+// function AllPriceProduct(product) {
+//     let allprice = 0;
+//     for (item of product) {
+//         let itemall = item.parice * item.quantaty;
+//         allprice = allprice + itemall;
+
+//     }
+//     return allprice
+// }
+// const allroductprice = AllPriceProduct(maxpriceall);
+// console.log(allroductprice + " tk");
+
+
+// //5. ticket 100 jonno 100tk and100- 200 jonno 90 tk and 200+ ar jonno 70tk mto kto tk hobe ber korte hobe.
+// const num = 201;
+
+// function TickteCount(value) {
+//     const partic100 = 100;
+//     const partic200 = 90;
+//     const partic200up = 70;
+//     if (value <= 100) {
+//         let total100price = value * partic100;
+//         return total100price
+//     } else if (value <= 200) {
+//         let par100price = 100 * partic100;
+//         let total200price = value - 100;
+//         let total200ticketpeice = par100price + total200price * partic200
+//         return total200ticketpeice
+//     } else {
+//         let par100price = 100 * partic100;
+//         let par200price = 100 * 90
+//         let total200up = value - 200;
+//         let total200upprice = par100price + par200price + total200up * partic200up
+//         return total200upprice
+//     }
+// }
+// const alprice = TickteCount(num);
+// console.log(alprice);
+
+
+// //6. number type check korte hobe valid ase ki na
+
+// function add(a, b) {
+//     if (typeof a !== "number" || typeof b !== "number") {
+//         return ("number is not a valid");
+//     }
+//     let c = a + b;
+//     return c
+// }
+// const adds = add(12, 12);
+// console.log(adds);
